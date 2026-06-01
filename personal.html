@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personal - Consultorio Médico RMRD</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Paleta de colores basada en tonos Amarillos y Dorados */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fefcbf; /* Fondo amarillo claro y suave */
+            color: #333333;
+        }
+
+        /* Cabecera con borde Amarillo/Dorado Oscuro */
+        .cabecera {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 20px;
+            border-bottom: 4px solid #b7791f; /* Dorado oscuro */
+        }
+
+        .cabecera h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #b7791f; 
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        /* Contenedor del contenido */
+        .contenedor-tabla {
+            max-width: 1200px; 
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .contenedor-tabla h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #744210; /* Café/Dorado quemado para contraste */
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+        /* Estructura de Tabla Sencilla */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 12px; 
+        }
+
+        /* Encabezados Amarillo/Dorado Oscuro */
+        th {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #744210; 
+            color: white;
+            padding: 10px 8px;
+            text-align: left;
+            border: 1px solid #744210;
+            text-transform: uppercase;
+        }
+
+        /* Celdas con bordes amarillo/crema suaves */
+        td {
+            padding: 10px 8px;
+            border: 1px solid #fef3c7; 
+        }
+
+        .texto-capital {
+            text-transform: capitalize;
+        }
+
+        /* Pie de página con línea discontinua dorada */
+        footer {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 60px;
+            padding: 15px;
+            border-top: 2px dashed #b7791f; 
+            font-size: 11px;
+            color: #555555;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Consultorio Médico RMRD</h1>
+    </header>
+
+    <main class="contenedor-tabla">
+        <h2>PERSONAL MEDICO</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Personal</th>
+                    <th>Nombre</th>
+                    <th>Apellido Paterno</th>
+                    <th>Apellido Materno</th>
+                    <th>Género</th>
+                    <th>Rol</th>
+                    <th>Especialidad</th>
+                    <th>Cédula</th>
+                    <th>RFC</th>
+                    <th>Correo Electrónico</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="texto-capital">
+                    <td>13959</td>
+                    <td>Elena Clara</td>
+                    <td>Avila</td>
+                    <td>Rodriguez</td>
+                    <td>femenino</td>
+                    <td>limpieza</td>
+                    <td>esterilizacion de equipo</td>
+                    <td>30415012</td>
+                    <td style="text-transform: uppercase;">ECA37498</td>
+                    <td style="text-transform: none;">avila.Elena@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>13961</td>
+                    <td>Angel David</td>
+                    <td>Gomez</td>
+                    <td>Aguilar</td>
+                    <td>masculino</td>
+                    <td>guardia</td>
+                    <td>puerta principal</td>
+                    <td>91427210</td>
+                    <td style="text-transform: uppercase;">ADGA321</td>
+                    <td style="text-transform: none;">DavidGomez@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>13963</td>
+                    <td>Laura</td>
+                    <td>Mendoza</td>
+                    <td>Morales</td>
+                    <td>femenino</td>
+                    <td>recepcionista</td>
+                    <td>atencion al cliente</td>
+                    <td>10323280</td>
+                    <td style="text-transform: uppercase;">LUM4361</td>
+                    <td style="text-transform: none;">Mendoza@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>13965</td>
+                    <td>Lorenzo</td>
+                    <td>sanchez</td>
+                    <td>camargo</td>
+                    <td>masculino</td>
+                    <td>contador</td>
+                    <td>finanzas</td>
+                    <td>43435645</td>
+                    <td style="text-transform: uppercase;">LSC56723</td>
+                    <td style="text-transform: none;">camargosa@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>13967</td>
+                    <td>eliana luz</td>
+                    <td>torres</td>
+                    <td>luiz</td>
+                    <td>femenino</td>
+                    <td>enfermera</td>
+                    <td>cuidados intensivos</td>
+                    <td>782834</td>
+                    <td style="text-transform: uppercase;">ELTL567</td>
+                    <td style="text-transform: none;">luztorres@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>30592</td>
+                    <td>luis armando</td>
+                    <td>barraza</td>
+                    <td>calvo</td>
+                    <td>masculino</td>
+                    <td>enfermero</td>
+                    <td>pediatra</td>
+                    <td>782834</td>
+                    <td style="text-transform: uppercase;">LABC567</td>
+                    <td style="text-transform: none;">barraza@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>30567</td>
+                    <td>alberta</td>
+                    <td>chavez</td>
+                    <td>corrales</td>
+                    <td>femenino</td>
+                    <td>enfermera</td>
+                    <td>quirurgica</td>
+                    <td>738712</td>
+                    <td style="text-transform: uppercase;">ACC567</td>
+                    <td style="text-transform: none;">corrales@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>30564</td>
+                    <td>mara</td>
+                    <td>reyes</td>
+                    <td>gomez</td>
+                    <td>femenino</td>
+                    <td>seguridad</td>
+                    <td>camaras de seguridad</td>
+                    <td>973721</td>
+                    <td style="text-transform: uppercase;">MRG4566</td>
+                    <td style="text-transform: none;">maraR@gmail.com</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>30589</td>
+                    <td>guillermo</td>
+                    <td>flores</td>
+                    <td>garcia</td>
+                    <td>masculino</td>
+                    <td>limpieza</td>
+                    <td>sanitarios</td>
+                    <td>12330934</td>
+                    <td style="text-transform: uppercase;">GFG6134859</td>
+                    <td style="text-transform: none;">floresg@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        REBECA MIRANDA RASCON DEVORA 4;J 24308051280884 PROGRAMACION
+    </footer>
+
+</body>
+</html>

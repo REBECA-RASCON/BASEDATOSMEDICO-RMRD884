@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pacientes - Consultorio Médico RMRD</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0f6; 
+            color: #333333;
+        }
+
+        .cabecera {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 20px;
+            border-bottom: 4px solid #5b21b6;
+        }
+
+        .cabecera h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #5b21b6; 
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+       
+        .contenedor-tabla {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .contenedor-tabla h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #1e1b4b; 
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+       
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 13px;
+        }
+
+        
+        th {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #1e1b4b; 
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #1e1b4b;
+            text-transform: uppercase;
+        }
+
+        
+        td {
+            padding: 10px;
+            border: 1px solid #edd8f5; 
+        }
+
+        .texto-capital {
+            text-transform: capitalize;
+        }
+
+        
+        footer {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 60px;
+            padding: 15px;
+            border-top: 2px dashed #5b21b6; 
+            font-size: 11px;
+            color: #555555;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Consultorio Médico RMRD</h1>
+    </header>
+
+    <main class="contenedor-tabla">
+        <h2>PACIENTES</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Paciente</th>
+                    <th>Nombre Completo</th>
+                    <th>Fecha Nacimiento</th>
+                    <th>Género</th>
+                    <th>Tipo Sangre</th>
+                    <th>Condiciones Médicas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="texto-capital">
+                    <td>1</td>
+                    <td>Alonso Armendariz Dominguez</td>
+                    <td>02/03/1996</td>
+                    <td>masculino</td>
+                    <td style="text-transform: uppercase;">AB+</td>
+                    <td>Depresion</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>3</td>
+                    <td>Cassandra Franco Sanchez</td>
+                    <td>14/01/2001</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">A-</td>
+                    <td>Obesidad</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>4</td>
+                    <td>Donovan Carreon Carrillo</td>
+                    <td>14/01/1985</td>
+                    <td>masculino</td>
+                    <td style="text-transform: uppercase;">B+</td>
+                    <td>Artritis</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>5</td>
+                    <td>Fiona Lisa De la Cruz Meza</td>
+                    <td>15/06/1986</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">O+</td>
+                    <td>Diabetes mellinus (tipo 2)</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>6</td>
+                    <td>Francisco Quiñones Villa</td>
+                    <td>20/21/1964</td>
+                    <td>masculino</td>
+                    <td style="text-transform: uppercase;">B-</td>
+                    <td>Fibromalgia</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>7</td>
+                    <td>Karla Castillo Ramirez</td>
+                    <td>03/11/1958</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">A-</td>
+                    <td>Infartos previos</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>8</td>
+                    <td>Odette Marquez Pinto</td>
+                    <td>01/01/2001</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">O+</td>
+                    <td>Asma, psicosis</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>9</td>
+                    <td>Olga Alfonso Enriquez</td>
+                    <td>27/05/1997</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">A+</td>
+                    <td>Esclorosis multipe</td>
+                </tr>
+                <tr class="texto-capital">
+                    <td>10</td>
+                    <td>Zoe Ximena Zapata Garcia</td>
+                    <td>24/09/2005</td>
+                    <td>femenino</td>
+                    <td style="text-transform: uppercase;">AB+</td>
+                    <td>Alcoholismo</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        REBECA MIRANDA RASCON DEVORA 4;J 24308051280884 PROGRAMACION
+    </footer>
+
+</body>
+</html>

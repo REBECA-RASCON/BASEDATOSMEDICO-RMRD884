@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Citas - Consultorio Médico RMRD</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e6f0fa;
+            color: #333333;
+        }
+
+        .cabecera {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 20px;
+            border-bottom: 4px solid #002060; 
+        }
+
+        .cabecera h1 {
+            font-family: 'Montserrat', sans-serif;
+            color: #002060; 
+            margin: 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        
+        .contenedor-tabla {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .contenedor-tabla h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: #2a75d3; 
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        /* Encabezados Azules */
+        th {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #002060; 
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #002060;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #b0c9f0; 
+        }
+
+        footer {
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 60px;
+            padding: 15px;
+            border-top: 2px dashed #002060; 
+            font-size: 11px;
+            color: #555555;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <header class="cabecera">
+        <h1>Consultorio Médico RMRD</h1>
+    </header>
+
+    <main class="contenedor-tabla">
+        <h2>CITAS</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Cita</th>
+                    <th>Paciente</th>
+                    <th>Doctor</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Sala</th>
+                    <th>Motivo de la Cita</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>354477</td>
+                    <td>Odette Marquez Pinto</td>
+                    <td>Roberto Aguilar</td>
+                    <td>12/02/26</td>
+                    <td>1:00 pm</td>
+                    <td>sala 15</td>
+                    <td>malestar estomacal</td>
+                </tr>
+                <tr>
+                    <td>2351274</td>
+                    <td>Alonso Armendariz</td>
+                    <td>Lorena Esparza</td>
+                    <td>14/02/26</td>
+                    <td>1:30 pm</td>
+                    <td>sala 2</td>
+                    <td>malestar</td>
+                </tr>
+                <tr>
+                    <td>3549776</td>
+                    <td>Olga Alfonso Enriquez</td>
+                    <td>Maria Herrera</td>
+                    <td>13/02/26</td>
+                    <td>10:30 am</td>
+                    <td>sala 20</td>
+                    <td>Fiebre, dolor</td>
+                </tr>
+                <tr>
+                    <td>805280</td>
+                    <td>Bonita fuentes Rosales</td>
+                    <td>Pedro Escalante</td>
+                    <td>20/02/26</td>
+                    <td>11:30 am</td>
+                    <td>Sala 1</td>
+                    <td>Dolor al mover brazo</td>
+                </tr>
+                <tr>
+                    <td>3261281</td>
+                    <td>Cassandra Franco sanchez</td>
+                    <td>Melisa Jimenez</td>
+                    <td>10/02/26</td>
+                    <td>3:30 pm</td>
+                    <td>Sala 15</td>
+                    <td>lunares sospechosos</td>
+                </tr>
+                <tr>
+                    <td>7740512</td>
+                    <td>Fiona de la cruz</td>
+                    <td>Elena perez</td>
+                    <td>25/02/26</td>
+                    <td>4:00 pm</td>
+                    <td>sala 21</td>
+                    <td>Aceleracion del corazon</td>
+                </tr>
+                <tr>
+                    <td>4451282</td>
+                    <td>Donovan Carrion Carrillo</td>
+                    <td>Alan Medina</td>
+                    <td>25/02/26</td>
+                    <td>1:30 pm</td>
+                    <td>sala 4</td>
+                    <td>Dificultad al moverse</td>
+                </tr>
+                <tr>
+                    <td>645584</td>
+                    <td>Francisco Quiñones</td>
+                    <td>Cristian Rivera</td>
+                    <td>30/02/26</td>
+                    <td>2:20 pm</td>
+                    <td>sala 7</td>
+                    <td>Fiebre</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+   
+    <footer>
+        REBECA MIRANDA RASCON DEVORA 4;J 24308051280884 PROGRAMACION
+    </footer>
+
+</body>
+</html>
